@@ -48,6 +48,12 @@ The system successfully generates summaries, answers questions based on the cont
 
 ---
 
+📘 Kaggle Notebook
+➡ View the full Kaggle notebook:
+https://www.kaggle.com/code/venishreet/ai-powered-study-buddy
+
+---
+
 ## 👩‍💻 Author
 Venishree T
 
