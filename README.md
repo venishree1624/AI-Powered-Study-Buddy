@@ -53,6 +53,8 @@ The project demonstrates the practical application of NLP techniques for buildin
 ## 📂 Dataset
 A custom Kaggle dataset was created by uploading a study-material PDF. The dataset is processed directly within the Kaggle notebook to extract text and generate learning aids.
 
+**Sample input:** [sample-input.pdf](sample-input.pdf), a 3-page study document on Artificial Intelligence covering its types, key components, applications and ethical issues.
+
 ---
 
 ## 🛠️ Technologies Used
