@@ -22,6 +22,34 @@ The project demonstrates the practical application of NLP techniques for buildin
 
 ---
 
+## ⚙️ How It Works
+1. Extract text from the PDF using PyPDF2
+2. Clean and split the text into sentences using NLTK
+3. Score sentences with TF-IDF (scikit-learn) and pick the top ones for the summary
+4. For a question, find the sentences most similar to it and return them as the answer
+5. Turn key sentences into question-answer flashcards
+
+---
+
+## 🖼️ Sample Output
+
+**Input:** a 2-page PDF on [topic, e.g. "Computer Networks basics"]
+
+**Summary (TF-IDF, top 3 sentences):**
+> [paste the real summary your notebook produced]
+
+**Question:** [your question]
+**Answer:** [the answer it gave]
+
+**Flashcard:**
+- Q: [question]
+- A: [answer]
+
+![Summary output](screenshots/summary.png)
+![Flashcards output](screenshots/flashcards.png)
+
+---
+
 ## 📂 Dataset
 A custom Kaggle dataset was created by uploading a study-material PDF. The dataset is processed directly within the Kaggle notebook to extract text and generate learning aids.
 
@@ -45,6 +73,20 @@ A custom Kaggle dataset was created by uploading a study-material PDF. The datas
 
 ## 📊 Results
 The system successfully generates summaries, answers questions based on the content, and creates flashcards to assist in exam preparation.
+
+---
+
+## ⚠️ Current Limitations
+- Summaries are extractive (selected sentences, not rewritten)
+- Question answering is retrieval-based, so answers can be weak when the question's wording differs from the text
+- Tested on a limited set of study PDFs; not yet a deployed app
+
+---
+
+## 🔮 Future Work
+- Improve QA using sentence embeddings or a pretrained QA model
+- Add a simple web interface (Streamlit or Gradio)
+- Evaluate on more documents
 
 ---
 
