@@ -19,6 +19,7 @@ The project demonstrates the practical application of NLP techniques for buildin
 - Question Answering from study material
 - Automatic flashcard generation for revision
 - Implemented using Python and NLP techniques
+- Quiz question generation for self-assessment
 
 ---
 
@@ -33,20 +34,15 @@ The project demonstrates the practical application of NLP techniques for buildin
 
 ## 🖼️ Sample Output
 
-**Input:** a 2-page PDF on [topic, e.g. "Computer Networks basics"]
+Run on [sample-input.pdf](sample-input.pdf) (a 3-page study document on Artificial Intelligence).
 
-**Summary (TF-IDF, top 3 sentences):**
-> [paste the real summary your notebook produced]
+**Summary (TF-IDF):**
+![Summary output](summary.png)
 
-**Question:** [your question]
-**Answer:** [the answer it gave]
+**Question answering and flashcards:**
+![QA and flashcards output](qa-flashcards.png)
 
-**Flashcard:**
-- Q: [question]
-- A: [answer]
-
-![Summary output](screenshots/summary.png)
-![Flashcards output](screenshots/flashcards.png)
+📄 Full project presentation: [Capstone-Presentation.pdf](Capstone-Presentation.pdf)
 
 ---
 
@@ -74,7 +70,7 @@ A custom Kaggle dataset was created by uploading a study-material PDF. The datas
 ---
 
 ## 📊 Results
-The system successfully generates summaries, answers questions based on the content, and creates flashcards to assist in exam preparation.
+On the 3-page sample PDF, the system generates a summary, answers questions about the text, creates quiz questions and flashcards (see Sample Output above).
 
 ---
 
